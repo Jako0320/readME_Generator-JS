@@ -31,7 +31,7 @@ const questions = [
   },
   {
     type: "input",
-    name: "test",
+    name: "testing",
     message: "Enter test instructions:",
   },
   {
@@ -53,6 +53,43 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
+const generateREADME = (data) => {
+    return `
+# ${data.title}
+
+## Description
+${data.description}
+
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Installation
+${data.installation}
+
+## Usage
+${data.usage}
+
+## License
+This application is covered under the ${data.license} license.
+
+## Contributing
+${data.contributing}
+
+## Testing
+${data.testing}
+
+## Questions
+Please feel free to reach out for any questions:
+- GitHub: (https://github.com/${data.username})
+- Email: ${data.email}
+`; 
+}
+
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
