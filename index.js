@@ -65,7 +65,7 @@ ${data.description}
 - [Usage](#usage)
 - [License](#license)
 - [Contributing](#contributing)
-- [Tests](#tests)
+- [Testing](#testing)
 - [Questions](#questions)
 
 ## Installation
@@ -85,7 +85,7 @@ ${data.testing}
 
 ## Questions
 Please feel free to reach out for any questions:
-- GitHub: (https://github.com/${data.username})
+- GitHub: https://github.com/${data.username}
 - Email: ${data.email}
 `;
 };

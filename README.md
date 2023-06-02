@@ -2,7 +2,7 @@
 # README Generator
 
 ## Description
-Create a professional README File generator with the appropriate prompts
+Create a professional README Generator with the appropriate prompts
 
 ## Table of Contents
 - [Installation](#installation)
@@ -13,21 +13,21 @@ Create a professional README File generator with the appropriate prompts
 - [Questions](#questions)
 
 ## Installation
-Run in node.js
+Requires fs and inquirer V 8.2.4 to run on node.js
 
 ## Usage
-to come
+<a href="https://drive.google.com/file/d/1ncFK2n5FpDOvVVbddUtWwT7zZJ37uLUS/view">README Gen demo</a>
 
 ## License
 This application is covered under the None license.
 
 ## Contributing
-Download and use as you see fit
+Copy and use as you see fit
 
 ## Testing
 N/A
 
 ## Questions
 Please feel free to reach out for any questions:
-- GitHub: (https://github.com/jako0320)
+- GitHub: https://github.com/jako0320
 - Email: jacques.scoffoni@gmail.com
