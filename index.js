@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const { prompt } = require("inquirer");
 const fs = require("fs");
+const { generateMarkdown, renderLicenseBadge } = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -54,11 +55,14 @@ const questions = [
 
 // TODO: Create a function to write README file
 const generateREADME = (data) => {
+  const licenseBadge = renderLicenseBadge(data.license);
+  const markdown = generateMarkdown(data);
   return `
 # ${data.title}
 
 ## Description
-${data.description}
+${data.description}<br>
+${licenseBadge}
 
 ## Table of Contents
 - [Installation](#installation)
@@ -75,7 +79,7 @@ ${data.installation}
 ${data.usage}
 
 ## License
-This application is covered under the ${data.license} license.
+${markdown}
 
 ## Contributing
 ${data.contributing}
